@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeQuest | Learn. Code. Conquer.</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--secondary);
+            letter-spacing: 2px;
+            margin-bottom: 35px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg,
+                #a78bfa, #22d3ee);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin: 22px 0 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .outline-btn {
+            background: transparent;
+            border: 1px solid var(--primary);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            padding: 22px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="logo">CODEQUEST</div>
+
+            <h1>
+                Learn Programming.<br>
+                <span>Level Up Your Skills.</span>
+            </h1>
+
+            <p>
+                Turn your coding journey into an exciting adventure.
+                Solve programming missions, earn XP, track your progress,
+                and compete with other learners.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="register.jsp" class="btn">
+                    Get Started
+                </a>
+
+                <a href="login.jsp" class="btn outline-btn">
+                    Student Login
+                </a>
+
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h2>01</h2>
+                    <h3>Learn by Doing</h3>
+                    <p>Practice programming through interactive missions.</p>
+                </div>
+
+                <div class="feature">
+                    <h2>02</h2>
+                    <h3>Earn Rewards</h3>
+                    <p>Gain XP points by completing coding challenges.</p>
+                </div>
+
+                <div class="feature">
+                    <h2>03</h2>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your achievements and mission history.</p>
+                </div>
+
+            </div>
+
+            <p style="margin-top:30px;">
+                <a href="admin-login.jsp">Administrator Login</a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 CodeQuest. Learn. Code. Conquer.
+    </footer>
+
+</body>
+</html>
