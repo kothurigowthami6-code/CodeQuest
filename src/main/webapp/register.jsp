@@ -1,113 +1,85 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" %>
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Student Registration - CodeQuest</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Registration Successful - CodeQuest</title>
+
+    <link rel="stylesheet"
+          href="${pageContext.request.contextPath}/css/style.css">
+
     <style>
-        .form-container {
-            max-width: 420px;
-            margin: 50px auto;
-            padding: 30px;
-            background: #11182d;
-            border-radius: 12px;
-        }
-
-        .form-container h2 {
+        .success-container {
+            width: 90%;
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 40px;
             text-align: center;
+            background: rgba(21, 29, 50, 0.95);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 22px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+        }
+
+        .success-icon {
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: rgba(74,222,128,0.15);
+            color: #4ade80;
+            font-size: 40px;
+        }
+
+        .success-container h1 {
+            font-size: 28px;
+            color: #4ade80;
+            margin-bottom: 15px;
+        }
+
+        .success-container p {
+            color: #cbd5e1;
             margin-bottom: 25px;
-            color: #a78bfa;
         }
 
-        .form-container label {
-            display: block;
-            margin: 12px 0 6px;
+        .success-container .btn {
+            display: inline-block;
+            margin-top: 15px;
         }
-
-        .form-container input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #334155;
-            border-radius: 6px;
-            background: #0b1020;
-            color: white;
-        }
-
-        .form-container button {
-            width: 100%;
-            margin-top: 22px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        
-
-body {
-    color: #f8fafc;
-}
-
-
-.form-container h2 {
-    color: #a78bfa;
-}
-
-
-.form-container label {
-    color: #e2e8f0;
-}
-
-
-.form-container input {
-    color: #ffffff;
-}
-
-
-.form-container p {
-    color: #cbd5e1;
-}
-
-/* Login link */
-.form-container p a {
-    color: #a78bfa;
-    text-decoration: none;
-}
-
-.form-container p a:hover {
-    color: #c4b5fd;
-}
-        
     </style>
 </head>
+
 <body>
 
-<header>
-    <div class="logo">CodeQuest</div>
-    <nav><a href="index.html">Home</a></nav>
-</header>
+    <div class="success-container">
 
-<div class="form-container">
-    <h2>Create Student Account</h2>
+        <div class="success-icon">✓</div>
 
-    <form action="register" method="post">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
+        <h1>Registration Successful!</h1>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
+        <p>
+            Your CodeQuest account has been created successfully.
+        </p>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"
-               minlength="8" required>
+        <p>
+            You can now log in and start completing programming missions.
+        </p>
 
-        <button type="submit" class="btn">Register</button>
-    </form>
+        <a href="${pageContext.request.contextPath}/login.jsp"
+           class="btn">
+            Login Now
+        </a>
 
-    <p style="text-align:center; margin-top:20px;">
-        Already registered? <a href="login.jsp">Login</a>
-    </p>
-</div>
+        <br><br>
+
+        <a href="${pageContext.request.contextPath}/index.html">
+            Back to Home
+        </a>
+
+    </div>
 
 </body>
 </html>
